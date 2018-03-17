@@ -1,0 +1,17 @@
+// imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// variables
+$nav-color: #383E4C;
+$nav-border-color: #646d7c;
+$container-width: 1170px;
+$section1-box1: #178A27;
+$section1-box2: #1686C1;
+$section1-box3: #852406;
+// mixins
+@mixin btn($color) {
+  background-color: $color;
+  color: white;
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
+}

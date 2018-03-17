@@ -1,0 +1,26 @@
+nav {
+  width: 100%;
+  background: $nav-color;
+  text-align: center;
+  position: fixed;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    display: block;
+    border: 1px solid $nav-border-color;
+    margin: 10px 10px 15px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      background: $nav-border-color;
+    }
+  }
+}
+.active {
+  background: $nav-border-color;
+}
