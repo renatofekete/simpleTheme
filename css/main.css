@@ -116,6 +116,45 @@ nav {
 .active {
   background: #646d7c; }
 
+.responsive-menu {
+  display: flex;
+  transform: translate(-100%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: menu2 300ms linear forwards; }
+  .responsive-menu a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block; }
+  .responsive-menu .close {
+    position: fixed;
+    left: 20px;
+    top: 20px; }
+
+.hamburger {
+  display: none; }
+
+.show {
+  display: flex;
+  transform: translate(0%);
+  animation: menu 300ms linear forwards; }
+
+@keyframes menu {
+  0% {
+    transform: translate(-100%); }
+  100% {
+    transform: translatte(0); } }
+@keyframes menu2 {
+  0% {
+    transform: translate(0); }
+  100% {
+    transform: translatte(-100%); } }
 header {
   width: 100%;
   height: 100%;
@@ -257,6 +296,13 @@ header {
 @media screen and (max-width: 630px) {
   nav {
     display: none; }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1; }
 
   .section .box {
     width: 70%;

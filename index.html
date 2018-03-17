@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Theme</title>
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,7 +30,17 @@
       </li>
     </ul>
   </nav>
-  <header>
+  <div class="responsive-menu">
+    <ul>
+      <li><a href="#header">Homepage</a></li>
+      <li><a href="#aboutUs">About Us</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="close"><i class="fas fa-times"></i></div>
+  </div>
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+  <header id="header">
     <h1>Conquer</h1>
     <h4>Simple theme</h4>
   </header>
@@ -182,22 +196,22 @@
   <div class="contact" id="contact">
     <div class="box">
       <h1>Contact form</h1>
-      <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id 
-        felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. 
-        Etiam a mi quis arcu varius condimentum.</p>
-        <form action="#" method="Get">
-          <div class="left">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Subject">
-          </div>
-          <div class="right">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button>Send</button>
-          </div>
-        </form>
+      <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero
+        at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
+      <form action="#" method="Get">
+        <div class="left">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Subject">
+        </div>
+        <div class="right">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button>Send</button>
+        </div>
+      </form>
     </div>
-  </div><!-- contact -->
+  </div>
+  <!-- contact -->
   <div id="scrolltop">
     <img src="img/top.png" alt="scroll">
   </div>

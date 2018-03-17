@@ -32,6 +32,13 @@
   nav {
     display: none;
   }
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+  }
   .section {
     .box {
       width: 70%;

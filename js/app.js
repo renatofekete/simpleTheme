@@ -9,6 +9,26 @@ var service = document.getElementById("service");
 var scrollTop = document.getElementById("scrolltop");
 var header = document.querySelector("header");
 
+var menuItems = document.querySelectorAll(".responsive-menu ul li a");
+
+var hamburger = document.querySelector(".hamburger");
+var close = document.querySelector(".close");
+var resMenu = document.querySelector(".responsive-menu");
+
+hamburger.addEventListener("click", function() {
+  resMenu.classList.add("show");
+});
+close.addEventListener("click", function() {
+  resMenu.classList.remove("show");
+});
+
+for(i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener("click", function(){
+    resMenu.classList.remove("show"); 
+  });
+}
+
+
 // Scrolling
 contactBtn.addEventListener("click", function () {
   contact.scrollIntoView({
@@ -45,27 +65,23 @@ scrollTop.addEventListener("click", function () {
 window.addEventListener("scroll", function () {
   //header
   if (header.getBoundingClientRect().top < 200 && about.getBoundingClientRect().top > 200) {
-    if (homeBtn.classList.contains("active")) {
-    } else {
+    if (homeBtn.classList.contains("active")) {} else {
       homeBtn.classList.add("active");
     }
   } else {
     if (homeBtn.classList.contains("active")) {
       homeBtn.classList.remove("active");
-    } else {
-    }
+    } else {}
   }
   //about
   if (about.getBoundingClientRect().top < 200 && service.getBoundingClientRect().top > 200) {
-    if (aboutBtn.classList.contains("active")) {
-    } else {
+    if (aboutBtn.classList.contains("active")) {} else {
       aboutBtn.classList.add("active");
     }
   } else {
     if (aboutBtn.classList.contains("active")) {
       aboutBtn.classList.remove("active");
-    } else {
-    }
+    } else {}
   }
   //service
   if (service.getBoundingClientRect().top < 200 && contact.getBoundingClientRect().top > 200) {
@@ -77,9 +93,8 @@ window.addEventListener("scroll", function () {
   } else {
     if (serviceBtn.classList.contains("active")) {
       serviceBtn.classList.remove("active");
-    } else {
-    }
-  } 
+    } else {}
+  }
   //contact
   if (contact.getBoundingClientRect().top < 200 && contact.getBoundingClientRect().bottom > 0) {
     if (contactBtn.classList.contains("active")) {
@@ -93,5 +108,5 @@ window.addEventListener("scroll", function () {
     } else {
 
     }
-  }// contact
+  } // contact
 });
