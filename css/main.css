@@ -121,7 +121,7 @@ nav {
   transform: translate(-100%);
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #F2F2F2;
   z-index: 2;
   justify-content: center;
@@ -157,7 +157,7 @@ nav {
     transform: translatte(-100%); } }
 header {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("../img/bg-1.jpg");
   background-attachment: fixed;
   background-position: center;
