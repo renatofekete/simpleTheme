@@ -1,0 +1,69 @@
+@media screen and (max-width: 960px) {
+  .section {
+    width: 100%;
+  }
+  .contact {
+    height: auto;
+    .box {
+      padding: 50px;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    flex-wrap: wrap;
+    .text {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .section-3 {
+    .box {
+      width: 49%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    display: none;
+  }
+  .section {
+    .box {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+  }
+  .services {
+    .text {
+      p {
+        line-height: 1.2;
+        font-size: 12px;
+      }
+    }
+  }
+  .contact {
+    .box {
+      padding: 50px 0;
+      width: 95%;
+      p {
+        padding: 20px;
+      }
+      form {
+        flex-wrap: wrap;
+        .right, .left {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .section .box {
+    width: 95%;
+  }
+}

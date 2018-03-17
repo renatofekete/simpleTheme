@@ -21,11 +21,11 @@ ul {
   list-style-type: none; }
 
 .section {
-  width: 1170px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 50px; }
 
 .box {
@@ -68,7 +68,7 @@ ul {
   display: flex;
   margin-bottom: 50px; }
   .services .text {
-    width: 1170px;
+    width: 960px;
     margin: 0 auto;
     padding: 70px;
     text-align: center;
@@ -235,5 +235,48 @@ header {
     color: white; }
     .contact button:hover {
       color: #262628; }
+
+@media screen and (max-width: 960px) {
+  .section {
+    width: 100%; }
+
+  .contact {
+    height: auto; }
+    .contact .box {
+      padding: 50px;
+      width: 80%; } }
+@media screen and (max-width: 800px) {
+  .section {
+    flex-wrap: wrap; }
+    .section .text p {
+      font-size: 12px; }
+
+  .section-3 .box {
+    width: 49%;
+    margin-bottom: 20px; } }
+@media screen and (max-width: 630px) {
+  nav {
+    display: none; }
+
+  .section .box {
+    width: 70%;
+    margin-bottom: 20px; }
+
+  .services .text p {
+    line-height: 1.2;
+    font-size: 12px; }
+
+  .contact .box {
+    padding: 50px 0;
+    width: 95%; }
+    .contact .box p {
+      padding: 20px; }
+    .contact .box form {
+      flex-wrap: wrap; }
+      .contact .box form .right, .contact .box form .left {
+        width: 100%; } }
+@media screen and (max-width: 540px) {
+  .section .box {
+    width: 95%; } }
 
 /*# sourceMappingURL=main.css.map */

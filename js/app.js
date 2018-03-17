@@ -12,19 +12,22 @@ var header = document.querySelector("header");
 // Scrolling
 contactBtn.addEventListener("click", function () {
   contact.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
+    block: "start"
   });
 });
 
 homeBtn.addEventListener("click", function () {
   home.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
+    block: "start"
   });
 });
 
 aboutBtn.addEventListener("click", function () {
   about.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
+    block: "start"
   });
 });
 
